@@ -15,4 +15,8 @@ return {
     version = '*',
     config = true,
   },
+  {
+    'dnlhc/glance.nvim',
+    cmd = 'Glance',
+  },
 }
