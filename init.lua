@@ -131,7 +131,7 @@ vim.o.smartcase = true
 -- Keep signcolumn on by default
 vim.o.signcolumn = 'yes'
 
-vim.o.tabstop = 2
+-- vim.o.tabstop = 2
 vim.o.shiftwidth = 2
 
 -- Decrease update time
