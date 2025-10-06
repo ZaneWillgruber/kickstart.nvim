@@ -19,4 +19,8 @@ return {
     'dnlhc/glance.nvim',
     cmd = 'Glance',
   },
+  {
+    'mbbill/undotree',
+    vim.keymap.set('n', '<leader>u', vim.cmd.UndotreeToggle, { desc = 'view [u]ndo tree' }),
+  },
 }
