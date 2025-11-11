@@ -20,8 +20,12 @@ return {
     cmd = 'Glance',
   },
   {
-    'mbbill/undotree',
-    vim.keymap.set('n', '<leader>u', vim.cmd.UndotreeToggle, { desc = 'view [u]ndo tree' }),
+    'XXiaoA/atone.nvim',
+    cmd = 'Atone',
+    keys = {
+      { '<leader>u', '<cmd>Atone toggle | Atone focus<CR>', desc = 'view [u]ndo tree', silent = true },
+    },
+    opts = {}, -- your configuration here
   },
   {
     'github/copilot.vim',

@@ -1,5 +1,5 @@
 function setColorScheme(scheme)
-  scheme = scheme or 'tokyonight'
+  scheme = scheme or 'rose-pine-moon'
   vim.cmd.colorscheme(scheme)
 end
 
@@ -15,6 +15,7 @@ return {
           comments = { italic = false },
         },
       }
+      setColorScheme()
     end,
   },
   {
@@ -27,6 +28,7 @@ return {
     priority = 1000,
     config = function()
       require('catppuccin').setup { transparent_background = true }
+      setColorScheme()
     end,
   },
   {
@@ -35,7 +37,7 @@ return {
     priority = 1000,
     config = function()
       require('rose-pine').setup { disable_background = true }
-      setColorScheme 'rose-pine'
+      setColorScheme()
     end,
   },
 }
