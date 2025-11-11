@@ -23,4 +23,15 @@ return {
     'mbbill/undotree',
     vim.keymap.set('n', '<leader>u', vim.cmd.UndotreeToggle, { desc = 'view [u]ndo tree' }),
   },
+  {
+    'github/copilot.vim',
+    vim.keymap.set('i', '<C-Y>', 'copilot#Accept("\\<CR>")', {
+      expr = true,
+      replace_keycodes = false,
+    }),
+  },
+  {
+    'dundargoc/fakedonalds.nvim',
+    colorscheme = 'fakedonalds',
+  },
 }
