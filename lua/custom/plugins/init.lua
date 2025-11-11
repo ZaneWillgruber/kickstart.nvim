@@ -30,8 +30,4 @@ return {
       replace_keycodes = false,
     }),
   },
-  {
-    'dundargoc/fakedonalds.nvim',
-    colorscheme = 'fakedonalds',
-  },
 }
